@@ -39,7 +39,7 @@ class LocalWeather extends Component {
     render() {
         return (
             <div className="localweather">
-                <p>
+                <h1>Information from Local Weather Station</h1>
                 Current weather in: {this.state.city}           <br/>
                 Country: {this.state.country}                   <br/>
                 Conditions: {this.state.conditions}             <br/>
@@ -48,8 +48,7 @@ class LocalWeather extends Component {
                 Current temperature: {this.state.temp} °C       <br/>
                 Minimum temperature: {this.state.min_temp} °C   <br/>
                 Maximum temperature: {this.state.max_temp} °C   <br/>
-                Visibility: {this.state.visibility} km            
-                </p>        
+                Visibility: {this.state.visibility} km                  
             </div>
         );
     }
