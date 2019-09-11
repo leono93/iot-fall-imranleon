@@ -7,7 +7,7 @@ class Header extends Component {
         return (
             <div className="header-container">
                 PiWeather Report 
-                <img className="partlycloudy" src={partlycloudy}></img>
+                <img className="partlycloudy" src={partlycloudy} alt="img1"></img>
                 
             </div>
         );
