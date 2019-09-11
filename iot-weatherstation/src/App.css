@@ -5,20 +5,13 @@
   color: #433d3d;
   display: block;
   background: #ebf9f9;
-  height: 150px;
+  height: 120px;
   padding: 30px;
   position: auto;
   border: 1px solid;
 }
 
 .partlycloudy{
-  width: 75px;
-  height: auto;
-}
-
-.sunny{
-  bottom: 2;
-  right: 0;
   width: 75px;
   height: auto;
 }

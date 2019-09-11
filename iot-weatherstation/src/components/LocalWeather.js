@@ -22,7 +22,6 @@ class LocalWeather extends Component {
         const api_call = await fetch("http://api.openweathermap.org/data/2.5/weather?q=Oulu&appid=58b1f072de0327f45be91ce1a819c2fe");
 
     const response = await api_call.json();
-    console.log(response);
 
     this.setState({
         city: response.name,
@@ -30,10 +29,10 @@ class LocalWeather extends Component {
         conditions: response.weather[0].description,
         humidity: response.main.humidity,
         pressure: response.main.pressure,      
-        temp: response.main.temp-273.15,
-        min_temp: response.main.temp_min-273.15,
-        max_temp: response.main.temp_max-273.15,
-        visibility: response.visibility*1.609344/1000,
+        temp: Math.round(response.main.temp-273.15),
+        min_temp: Math.round(response.main.temp_min-273.15),
+        max_temp: Math.round(response.main.temp_max-273.15),
+        visibility: Math.round(response.visibility*1.609344/1000)
     })
 }
 
