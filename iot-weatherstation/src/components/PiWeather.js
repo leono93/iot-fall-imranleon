@@ -6,11 +6,9 @@ class PiWeather extends Component {
         return (
             <div className="piweather">
                 <h1>Information from Raspberry Pi Weather Station</h1>
-
                 <Chart
     width={1500}
     height={'auto'}
-    align={'left'}
     chartType="LineChart"
     loader={<div>Loading Chart</div>}
     data={[
@@ -33,9 +31,7 @@ class PiWeather extends Component {
       hAxis: { title: 'September | Syyskuu', titleTextStyle: { color: '#333' } },
       vAxis: { minValue: 0 },
       backgroundColor: '#D1EAF8',
-      // For the legend to fit, we make the chart area smaller
       chartArea: { width: '30%', height: 'auto' }
-      // lineWidth: 25
     }}
   />
             </div>

@@ -4,7 +4,7 @@ class Footer extends Component {
     render() {
         return (
             <div>
-                Internet of Things Project OAMK 2019
+                Internet of Things Project || OAMK 2019 Fall
             </div>
         );
     }
