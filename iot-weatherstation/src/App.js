@@ -3,7 +3,8 @@ import './App.css';
 import Header from './components/Header.js';
 import LocalWeather from './components/LocalWeather.js';
 import PiWeather from './components/PiWeather.js';
-import Footer from './components/Footer.js'
+import Footer from './components/Footer.js';
+import Data from './components/Data.js';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <br/>
       <div><LocalWeather/>
       <PiWeather/>
+      </div>
+      <div>
+        <Data/>
       </div>
       <br/>
       <br/>

@@ -11,8 +11,12 @@
   border: 1px solid;
 }
 
-.Main, .piweather{
+.Main{
   background: rgb(209, 234, 248);
+}
+
+.piweather{
+  padding: 30px;
 }
 
 .partlycloudy{
@@ -26,4 +30,13 @@
   height: 37px;
 }
 
+.localweather{
+  text-align: left;
+  font-family: "Segoe UI";
+  padding: 30px;
+}
+
+.data{
+  padding: 30px;
+}
 
