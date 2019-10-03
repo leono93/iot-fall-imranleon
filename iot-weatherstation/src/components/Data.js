@@ -46,7 +46,7 @@ class Data extends Component {
 
         return (
             <div className="data">
-                <h1>Historical Weather Data for {month} {year}</h1>
+                <h1>Historical Weather Data Analysis for {month} {year}</h1>
 
                 Lowest recorded temperature: {minTemp} °C   <br/>
                 Highest recorded temperature: {maxTemp} °C  <br/>
