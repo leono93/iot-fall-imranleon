@@ -43,6 +43,13 @@ class Data extends Component {
         let maxHighMiddle = Math.floor((maxCount - 2)/2);
         let maxMedian = (aMaxTemp[maxLowMiddle] + aMaxTemp[maxHighMiddle]) /2;
 
+        var firstMinData = aMinTemp[0];
+        var lastMinData = aMinTemp[aMinTemp.length-1];
+        var minDifference = firstMinData-lastMinData;
+        var firstMaxData = aMaxTemp[0];
+        var lastMaxData = aMaxTemp[aMaxTemp.length-1];
+        var maxDifference = firstMaxData-lastMaxData;
+
 
         return (
             <div className="data">
@@ -55,7 +62,11 @@ class Data extends Component {
                 Average maximum temperature: {maxAvg.toFixed(1)} °C    <br/>
                                                                        <br/>
                 Median of minimum temperatures: {minMedian} °C         <br/>
-                Median of maximum temperatures: {maxMedian} °C
+                Median of maximum temperatures: {maxMedian} °C         <br/>
+                                                                       
+                <h4>Temperature fluctuation in {month} {year}</h4> 
+                Fluctuation in minimum temperature: {minDifference.toFixed(1)} °C           <br/>
+                Fluctuation in maximum temperature: {maxDifference.toFixed(1)} °C                      <br/>
                 <div className="chartWeather">
                 <Chart
     width={1500}
