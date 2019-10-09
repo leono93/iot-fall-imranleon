@@ -12,15 +12,7 @@ function App() {
       <div><Header/></div>
       <div><LocalWeather/></div><hr/>
       <div><PiWeather/></div><hr/>
-      <div><Data/></div><hr/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <div><Data/></div>
       <div className="footer">
       <Footer/>
       </div>
