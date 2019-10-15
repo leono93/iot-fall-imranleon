@@ -41,3 +41,7 @@
   padding-bottom: 85px;
 }
 
+.importedData{
+  white-space: pre-wrap;
+}
+
