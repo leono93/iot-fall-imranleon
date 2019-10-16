@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Chart from 'react-google-charts';
 
 class LocalWeather extends Component {
     constructor(){
@@ -39,7 +40,7 @@ class LocalWeather extends Component {
     render() {
         return (
             <div className="localweather">
-                <h1>Information from Local Weather Station</h1>
+                <h1>from Local Weather Station</h1>
                 Current weather in: {this.state.city}           <br/>
                 Country: {this.state.country}                   <br/>
                 Conditions: {this.state.conditions}             <br/>
@@ -48,7 +49,38 @@ class LocalWeather extends Component {
                 Current temperature: {this.state.temp} °C       <br/>
                 Minimum temperature: {this.state.min_temp} °C   <br/>
                 Maximum temperature: {this.state.max_temp} °C   <br/>
-                Visibility: {this.state.visibility} km                  
+                Visibility: {this.state.visibility} km   
+                <div className="chartWeather3">
+                <Chart
+    width={1150}
+    height={'auto'}
+    chartType="LineChart"
+    loader={<div>Loading Chart</div>}
+    data={[
+      ['Time', 'Pressure'],
+      ['Thu Oct  3 13:20:04 2019', 1022],
+      ['Thu Oct  3 13:30:04 2019', 1022],
+      ['Thu Oct  3 13:40:04 2019', 1022],
+      ['Thu Oct  3 13:50:04 2019', 1022],
+      ['Thu Oct  3 14:00:04 2019', 1022],
+      ['Thu Oct  3 14:10:04 2019', 1022],
+      ['Thu Oct  3 14:20:04 2019', 1022],
+      ['Thu Oct  3 14:30:04 2019', 1022],
+      ['Thu Oct  3 14:40:04 2019', 1022],
+      ['Thu Oct  3 14:50:04 2019', 1021],
+      ['Thu Oct  3 15:00:04 2019', 1022],
+      ['Thu Oct  3 15:10:04 2019', 1022]
+
+    ]}
+    options={{
+      title: 'Raspberry Pi Weather: Pressure',
+      hAxis: { title: 'Pressure in hPa', titleTextStyle: { color: '333' } },
+      vAxis: { minValue: 980 },
+      backgroundColor: '#D1EAF8',
+      chartArea: { width: '30%', height: 'auto' }
+    }}
+  />
+                </div>          
             </div>
         );
     }

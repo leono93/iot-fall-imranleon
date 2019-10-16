@@ -10,8 +10,10 @@ function App() {
   return (
     <div className="Main">
       <div><Header/></div>
-      <div><LocalWeather/></div><hr/>
-      <div><PiWeather/></div><hr/>
+      <div className="wrapper">
+      <div><PiWeather/></div>
+      <div><LocalWeather/></div>
+      </div><hr/>
       <div><Data/></div>
       <div className="footer">
       <Footer/>

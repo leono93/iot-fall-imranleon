@@ -17,6 +17,9 @@
 
 .piweather{
   padding: 30px;
+    overflow: hidden; 
+  width: 850px;
+  float: left; 
 }
 
 .partlycloudy{
@@ -34,14 +37,51 @@
   text-align: left;
   font-family: "Segoe UI";
   padding: 30px;
+  width: auto;
+  white-space: pre-wrap;
 }
 
 .data{
   padding: 30px;
   padding-bottom: 85px;
+  white-space: pre-wrap;
 }
 
 .importedData{
   white-space: pre-wrap;
 }
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.chartWeather1 {
+  float: left;
+  left: -370px;
+  position: relative;
+  padding-right: 40px;
+}
+
+.chartWeather2 {
+left: -380px;
+position: relative;
+padding-right: 40px;
+}
+
+.chartWeather3 {
+  position: relative;
+  left: 390px;
+  float: auto;
+  padding-top: 82px;
+}
+
+.chartWeather4 {
+  position: relative;
+  left: 511px;
+  float: auto;
+  padding-top: 82px;
+  top: -282px;
+}
+
 

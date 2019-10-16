@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Chart from 'react-google-charts';
 import Import from '../components/Import.js';
 
 class PiWeather extends Component {
